@@ -1,9 +1,9 @@
 import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
-import About from "./pages/About";
-import Services from "./pages/Services";
 import Home from "./pages/Home";
-
+import Services from "./pages/Services";
+import About from "./pages/About";
+import { routes } from "./navigation/routes";
 const Root = () => {
   return (
     <>
@@ -16,23 +16,23 @@ const Root = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: routes.rootPage,
     element: <Root />,
     children: [
       {
-        path: "",
+        path: routes.homePage,
         element: <Home />,
       },
       {
-        path: "services",
+        path: routes.servicesPage,
         element: <Services />,
       },
       {
-        path: "about",
+        path: routes.aboutPage,
         element: <About />,
       },
       {
-        path: "*",
+        path: routes.errorPage,
         element: <Home />,
       },
     ],
