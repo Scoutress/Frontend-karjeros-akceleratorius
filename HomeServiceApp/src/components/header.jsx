@@ -4,7 +4,7 @@ const Header = () => {
       <div>
         <div>
           <img
-            src="../../public/images/logo-Baau9ypC.svg"
+            src="../../public/images/Logoipsum-logo.svg"
             alt="Logo"
             style={{ height: "75px" }}
           />
