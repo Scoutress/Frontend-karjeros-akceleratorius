@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header>
@@ -9,11 +11,19 @@ const Header = () => {
             style={{ height: "75px" }}
           />
         </div>
-        <div>
-          <button>Home</button>
-          <button>Services</button>
-          <button>About Us</button>
-        </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/services">Services</Link>
+            </li>
+            <li>
+              <Link to="/about">About Us</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div>
         <button>Login / Sign Up</button>
