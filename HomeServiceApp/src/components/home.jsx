@@ -1,12 +1,15 @@
 import HomeCategories from "../components/HomeCategories";
 import Announcement from "../components/Announcement";
+import HomePopular from "../components/HomePopular";
 
 const Home = () => {
   return (
     <div>
       <Announcement />
-      <br></br>
+      <br />
       <HomeCategories />
+      <br />
+      <HomePopular />
     </div>
   );
 };
