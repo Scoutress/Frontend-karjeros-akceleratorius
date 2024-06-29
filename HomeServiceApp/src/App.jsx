@@ -1,13 +1,11 @@
+import Header from "./components/header";
+
 function App() {
   return (
     <div>
-      <header />
+      <Header />
     </div>
   );
-}
-
-function header() {
-  return <h1>Logoipsum</h1>;
 }
 
 export default App;
