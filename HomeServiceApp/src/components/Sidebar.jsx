@@ -1,14 +1,33 @@
-const Categories = () => {
+import PropTypes from "prop-types";
+
+const Sidebar = ({ onCategoryClick }) => {
+  const categories = [
+    "Cleaning",
+    "Repair",
+    "Painting",
+    "Shifting",
+    "Plumbing",
+    "Electric",
+  ];
+
   return (
     <div>
-      <button>Cleaning</button>
-      <button>Repair</button>
-      <button>Painting</button>
-      <button>Shifting</button>
-      <button>Plumbing</button>
-      <button>Electric</button>
+      <h2>Categories</h2>
+      <ul>
+        {categories.map((category) => (
+          <li key={category}>
+            <button onClick={() => onCategoryClick(category)}>
+              {category}
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
 
-export default Categories;
+Sidebar.propTypes = {
+  onCategoryClick: PropTypes.func.isRequired,
+};
+
+export default Sidebar;

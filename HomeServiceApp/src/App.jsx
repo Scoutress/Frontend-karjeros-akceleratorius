@@ -3,7 +3,9 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
+import ErrorPage from "./pages/ErrorPage";
 import { routes } from "./navigation/routes";
+import Categories from "./pages/Categories";
 const Root = () => {
   return (
     <>
@@ -16,8 +18,8 @@ const Root = () => {
 
 const router = createBrowserRouter([
   {
-    path: routes.rootPage,
     element: <Root />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: routes.homePage,
@@ -32,8 +34,28 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: routes.errorPage,
-        element: <Home />,
+        path: routes.serviceCleaning,
+        element: <Categories />,
+      },
+      {
+        path: routes.serviceRepair,
+        element: <Categories />,
+      },
+      {
+        path: routes.servicePainting,
+        element: <Categories />,
+      },
+      {
+        path: routes.serviceShifting,
+        element: <Categories />,
+      },
+      {
+        path: routes.servicePlumbing,
+        element: <Categories />,
+      },
+      {
+        path: routes.serviceElectric,
+        element: <Categories />,
       },
     ],
   },

@@ -1,7 +1,13 @@
 export const routes = {
-  rootPage: "/",
-  homePage: "",
-  servicesPage: "services",
-  aboutPage: "about",
-  errorPage: "*",
+  homePage: "/",
+  servicesPage: "/services",
+  aboutPage: "/about",
+  errorPage: "/*",
+
+  serviceCleaning: "/category/cleaning",
+  serviceRepair: "/category/repair",
+  servicePainting: "/category/painting",
+  serviceShifting: "/category/shifting",
+  servicePlumbing: "/category/plumbing",
+  serviceElectric: "/category/electric",
 };
