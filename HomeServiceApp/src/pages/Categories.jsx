@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Sidebar from "../components/Sidebar";
-import Service from "../components/Service/Service";
-import ServicesList from "../AllServices/ServicesList";
+import ServicesList from "../all-services/ServicesList";
+import Service from "../components/service/Service";
+import Sidebar from "../components/sidebar/Sidebar";
 
 const Categories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);

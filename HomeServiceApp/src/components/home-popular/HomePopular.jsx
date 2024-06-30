@@ -1,5 +1,5 @@
-import Service from "../Service/Service";
-import ServicesList from "../../AllServices/ServicesList";
+import Service from "../service/Service";
+import ServicesList from "../../all-services/ServicesList";
 import styles from "./HomePopular.module.scss";
 
 const HomePopular = () => {

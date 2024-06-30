@@ -1,10 +1,10 @@
 import { RouterProvider, Outlet, createBrowserRouter } from "react-router-dom";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
-import { routes } from "./navigation/routes";
+import { routes } from "./navigation/Routes";
 import Categories from "./pages/Categories";
 
 const Root = () => {

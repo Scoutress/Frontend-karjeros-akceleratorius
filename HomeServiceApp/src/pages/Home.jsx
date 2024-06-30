@@ -1,6 +1,6 @@
-import HomeCategories from "../components/HomeCategories/HomeCategories";
-import Announcement from "../components/Announcement/Announcement";
-import HomePopular from "../components/HomePopular/HomePopular";
+import Announcement from "../components/announcement/Announcement";
+import HomeCategories from "../components/home-categories/HomeCategories";
+import HomePopular from "../components/home-popular/HomePopular";
 
 const Home = () => {
   return (
