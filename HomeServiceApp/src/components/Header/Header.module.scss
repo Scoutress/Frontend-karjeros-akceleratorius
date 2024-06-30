@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   padding-left: 57px;
@@ -15,12 +14,15 @@
 }
 
 .logo {
+  display: flex;
+  flex-wrap: wrap;
   height: 41px;
   padding-right: 32px;
 }
 
-.navContainer {
+.navbar {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -33,6 +35,8 @@
 }
 
 .button {
+  display: flex;
+  flex-wrap: wrap;
   text-decoration: none;
   list-style: none;
   cursor: pointer;

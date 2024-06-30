@@ -4,14 +4,12 @@ import styles from "./Header.module.scss";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.navContainer}>
+      <div className={styles.logo}>
         <Link to="/">
-          <img
-            src="../../public/images/Logoipsum-logo.svg"
-            alt="Logo"
-            className={styles.logo}
-          />
+          <img src="../../public/images/Logoipsum-logo.svg" alt="Logo" />
         </Link>
+      </div>
+      <div className={styles.navbar}>
         <nav>
           <ul className={styles.ul}>
             <li className={styles.button}>
