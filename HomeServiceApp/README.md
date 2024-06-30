@@ -1,8 +1,5 @@
 # Tasks left:
 
-- SCSS modules or Styled-components
-
-- Responsive design with CSS media queries
 - Service card. OnClick navigate to categories
 - Search functionality
 - Service card Save as favorite with localStorage (useLocalStorage hook)
