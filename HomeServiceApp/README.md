@@ -1,5 +1,6 @@
 # Tasks left:
 
+- Services button (navbar) to all services list page
 - Service card. OnClick navigate to categories
 - Search functionality
 - Service card Save as favorite with localStorage (useLocalStorage hook)

@@ -5,7 +5,7 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
 import { routes } from "./navigation/Routes";
-import Categories from "./pages/Categories";
+import Categories from "./pages/categories/Categories";
 
 const Root = () => {
   return (
@@ -34,27 +34,7 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: routes.serviceCleaning,
-        element: <Categories />,
-      },
-      {
-        path: routes.serviceRepair,
-        element: <Categories />,
-      },
-      {
-        path: routes.servicePainting,
-        element: <Categories />,
-      },
-      {
-        path: routes.serviceShifting,
-        element: <Categories />,
-      },
-      {
-        path: routes.servicePlumbing,
-        element: <Categories />,
-      },
-      {
-        path: routes.serviceElectric,
+        path: routes.categoryPage,
         element: <Categories />,
       },
     ],
